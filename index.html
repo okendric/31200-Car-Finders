@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car Finders Inc</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <img src="images/logo.png">
+            <h1 id="title">Sports Cars</h1>
+        </div>
+
+
+        <form action="#" method="get">
+            <fieldset>
+                <div>
+                    <label for="manufacturer">Manufacturer:</label>
+                    <select name="manufacturer" id="manufacturer">
+                        <option value="Ford Mustang Shelby GT500">Ford Mustang
+                            Shelby GT500</option>
+                        <option value="Chrysler 300S">Chrysler 300S</option>
+                        <option value="Chevrolet Camaro">Chevrolet Camaro</option>
+                    </select>
+                </div>
+
+                <div class="color">
+                    <label id="colorLabel" for="color">Choose color:</label>
+                    <input type="color" name="color" id="color">
+                </div>
+
+                <div>
+                    <label for="text">License plate:</label>
+                    <input type="text" name="text" id="text">
+                </div>
+
+                <div id="driveOptions">
+                    <fieldset>
+                        <legend id="driveTitle">Drive options:</legend>
+                        <div>
+                            <input type="checkbox" name="fourWheel"
+                                id="fourWheel">
+                            <label for="fourWheel">Four-wheel drive</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="rearWheel"
+                                id="rearWheel">
+                            <label for="rearWheel">Rear-wheel drive</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="frontWheel"
+                                id="frontWheel">
+                            <label for="frontWheel">Front-wheel drive</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="allWheel"
+                                id="allWheel">
+                            <label for="allWheel">All-wheel drive</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </fieldset>
+
+            <div id="commentArea">
+                <label id="commentsLabel" for="comments">Enter any comments
+                    here!</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+
+            <div id="questionArea">
+                <p id="question">Do you just want the base model of the car (no
+                    extra customizations/add-ons)?</h1>
+                <div>
+                    <input type="radio" name="radio" id="radio1">
+                    <label for="radio1">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio" id="radio2">
+                    <label for="radio2">No</label>
+                </div>
+            </div>
+
+            <div>
+                <label id="timeLabel" for="time">Today's date:</label>
+                <input type="datetime-local" name="time" id="time">
+
+            </div>
+
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </body>
+</html>
